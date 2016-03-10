@@ -2,10 +2,15 @@
 //
 
 #include "stdafx.h"
+#include "iostream"
+#include "string";
+#include "conio.h";
+
+using namespace std;
 
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
-	return 0;
+	_getch();
 }
 
