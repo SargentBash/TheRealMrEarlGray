@@ -11,11 +11,11 @@ using namespace std;
 
 int main()
 {
+	cout << "------------------------------------ Welcome ----------------------------------\n";
+	cout << "Press enter to continue\n";
 
 
-
-
-
+	system("cls");
 	_getch();
 }
 
