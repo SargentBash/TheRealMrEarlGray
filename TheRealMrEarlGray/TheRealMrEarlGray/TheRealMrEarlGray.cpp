@@ -1,20 +1,20 @@
-// TheRealMrEarlGray.cpp : Defines the entry point for the console application.
-//
-
-#include "stdafx.h"
-#include "iostream"
-#include "string";
-#include "conio.h";
-#include "fstream";
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <fstream>
 
 using namespace std;
 
-
 int main()
 {
-	cout << "------------------------------------ Welcome ----------------------------------\n";
-	cout << "Press enter to continue\n";
-
+	ifstream infile("c:/in.txt"); // for example
+	string line = "";
+	while (getline(infile, line))
+	{
+		stringstream strstr(line);
+		string word = "";
+		while (getline(strstr, word, ';')) cout << word << '\n';
+	}
 
 	system("cls");
 	_getch();
